@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Flexbox</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 60px;
+      }
+      .box-1 {
+        background-color: red;
+        align-self: center;
+      }
+      .box-2 {
+        background-color: green;
+        align-self: center;
+      }
+      .box-3 {
+        background-color: blueviolet;
+      }
+      .box-4 {
+        background-color: yellow;
+      }
+      .container {
+        display: flex;
+        height: 95vh;
+        border: 1px solid black;
+
+        /* default */
+        flex-direction: row;
+
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        /* ============= */
+
+        /* default - align on the main-axis */
+        /* justify-content: flex-start; */
+
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+
+        /* ============= */
+
+        /* default - align on the cross-axis */
+        /* align-items: stretch; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+
+        /* =========== */
+
+        /* default - align on the cross axis */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* ========= */
+
+        /* align on the cross axis */
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-content: center; */
+        /* align-content: space-between; */
+        /* align-content: space-around; */
+        /* align-content: space-evenly; */
+
+        /* column-gap: 12px;
+        row-gap: 12px; */
+
+        /* gap: 12px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <!-- <div class="box box-1">5</div>
+      <div class="box box-2">6</div>
+      <div class="box box-3">7</div>
+      <div class="box box-4">8</div> -->
+    </div>
+  </body>
+</html>

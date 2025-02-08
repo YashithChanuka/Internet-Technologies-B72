@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Units</title>
+  </head>
+  <body>
+    <h1>CSS Units</h1>
+
+    <strong>====== 1. Pixels (px) ======</strong>
+    <!-- A pixel (px) is the smallest unit of measurement on a screen. It’s an absolute unit, and the size remains consistent regardless of screen size. -->
+    <p style="font-size: 24px">Hey There!!!</p>
+
+    <strong>====== 2. Centimeters (cm) ======</strong>
+    <!-- A centimeter (cm) is a physical measurement, useful for printed documents but rarely used in screen design. -->
+    <div style="border: 1px solid black; width: 5cm; height: 5cm"></div>
+
+    <strong>====== 3. Millimeters (mm) ===========</strong>
+    <!-- A millimeter (mm) is also a physical unit, mostly used for print media. -->
+    <div style="width: 50mm; height: 50mm; border: 1px solid black"></div>
+
+    <strong>======= 4. Inchecs (in) ========</strong>
+    <!-- An inch (in) is a physical unit, and it’s used in print media. -->
+    <div style="width: 2in; height: 2in; border: 1px solid black"></div>
+
+    <strong>======= 5. Percentage (%) =======</strong>
+    <!-- A percentage (%) is a relative unit, and it’s based on the size of the parent element. -->
+    <div style="background-color: blue; width: 50%; height: 200px">
+      <div style="background-color: green; width: 50%; height: 200px"></div>
+    </div>
+
+    <strong>======== 6. em =========</strong>
+    <!-- An em is a relative unit, and it’s based on the font size of the parent element. If no parent element is defined, it refers to the root element. -->
+
+    <div style="font-size: 8px">
+      <p style="font-size: 1em">Hello World!</p>
+      <p style="font-size: 1.5em">Hello World!</p>
+      <p style="font-size: 2em">Hello World!</p>
+    </div>
+
+    <strong>======= 7. rem =======</strong>
+    <!-- A rem is similar to em, but it always refers to the font size of the root (<html>) element, making it more predictable. -->
+
+    <p style="font-size: 1rem">Hey There...</p>
+    <p style="font-size: 1.5rem">Hey There...</p>
+    <p style="font-size: 2rem">Hey There...</p>
+
+    <strong>====== 8. Viewport Width (vw) ======</strong>
+    <!-- vw is a unit based on the width of the viewport. 1 vw equals 1% of the viewport’s width. -->
+
+    <div style="background-color: blueviolet; width: 50vw; height: 50vw"></div>
+
+    <strong>======= 9. Viewport Height (vh) =====</strong>
+    <!-- vh is similar to vw, but it is based on the height of the viewport. 1 vh equals 1% of the viewport’s height. -->
+
+    <div style="background-color: brown; width: 20vh; height: 20vh"></div>
+  </body>
+</html>
