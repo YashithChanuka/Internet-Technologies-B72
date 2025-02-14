@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Important</title>
+    <style>
+      h1 {
+        color: green;
+      }
+      .title {
+        color: aqua !important;
+      }
+      #main-title {
+        color: blue;
+      }
+      div h1 {
+        color: orange;
+      }
+      .container #main-title {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The !important rule in CSS is used to give a style declaration higher priority. 
+       It overrides all other declarations of that property, regardless of specificity.   -->
+    <div class="container">
+      <h1 class="title" id="main-title" style="color: red">CSS Important</h1>
+    </div>
+  </body>
+</html>
