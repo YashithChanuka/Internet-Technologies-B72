@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - CSS Positions</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .box1 {
+        width: 300px;
+        height: 300px;
+        background-color: purple;
+
+        /* position: static; */
+
+        /* position: absolute;
+        top: 20px;
+        left: 20px; */
+
+        /* position: absolute;
+        top: 10px;
+        left: 10px; */
+
+        /* position: fixed;
+        top: 100px;
+        left: 100px; */
+
+        position: sticky;
+        top: 0;
+        left: 0;
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+
+        /* position: relative;
+        top: 10px;
+        left: 10px; */
+
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== 1. static =====
+    <p>
+      Default positioning for all elements. Elements are positioned according to
+      the normal flow of the document.
+    </p> -->
+
+    <!-- ===== 2. relative =====
+    <p>Elements are positioned relative to their normal position. The element remains in the normal document flow.</p> -->
+
+    <!-- ====== 3. absolute ======
+    <p>
+      Elements are positioned relative to their nearest positioned parent (a
+      parent with any position other than static). If no such parent exists,
+      they are positioned relative to the initial containing block (usually the
+      viewport). The element is removed from the normal document flow.
+    </p> -->
+
+    <!-- ====== 4. fixed ======
+    <p>
+      The element is removed from the normal document flow. It is positioned relative to the viewport, meaning it stays in the same place even when scrolling.
+    </p> -->
+
+    <!-- ====== 5. sticky ======
+    <p>
+      The element toggles between relative and fixed depending on scroll position. It behaves like relative until it reaches a specified top, left, right, or bottom, then acts like fixed.
+    </p> -->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <div class="box1">
+      <div class="box2"></div>
+    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eligendi,
+      debitis cupiditate doloremque sunt harum deserunt veritatis accusamus
+      maxime quas molestias dolor rem provident ipsum ex? Eaque, dolore
+      perspiciatis? Eveniet quaerat beatae perferendis quia maxime explicabo,
+      eum qui minus illum perspiciatis corrupti optio dolorum cumque quibusdam
+      sit molestiae dolores facilis!
+    </p>
+  </body>
+</html>

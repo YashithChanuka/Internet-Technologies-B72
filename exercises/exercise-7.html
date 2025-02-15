@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 07</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: wheat;
+      }
+      #logo {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin-right: 12px;
+      }
+      #logo-container {
+        display: flex;
+      }
+      header {
+        background-color: #333;
+        width: 100%;
+        height: 8vh;
+        color: wheat;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      nav > ul {
+        display: flex;
+        list-style: none;
+      }
+      nav > ul > li {
+        margin: 0 40px;
+      }
+      nav > ul > li > a {
+        color: wheat;
+        text-decoration: none;
+      }
+      #hero-section {
+        display: flex;
+        margin-top: 11vh;
+      }
+      #hero-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px;
+      }
+      #hero-image {
+        width: 50%;
+        object-fit: cover;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+      }
+      #more-btn {
+        background-color: #333;
+        color: wheat;
+        padding: 12px;
+        border-radius: 12px;
+      }
+      #social-media {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      #social-media img {
+        width: 32px;
+        height: 32px;
+        border-radius: 12px;
+        margin: 0 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo-container">
+        <img id="logo" src="/assets/images/prof-img.jpeg" alt="logo" />
+        <h3>Yashith Chanuka</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section">
+        <div id="hero-content">
+          <h1>Welcome to my web site</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et
+            velit placeat iusto sit. Dignissimos ex reiciendis atque dolore ad
+            natus magnam laboriosam aut cumque illum quisquam earum omnis
+            obcaecati modi doloribus aliquam assumenda quis aspernatur velit
+            recusandae id magni incidunt, delectus quia! Quos sequi temporibus
+            tempore, in doloremque sed eius impedit. Tenetur, omnis! Maxime
+            mollitia harum rem facilis corrupti provident eligendi doloribus
+            repudiandae? Rerum dolorum aperiam hic eum perspiciatis illo neque
+            obcaecati, voluptate quas incidunt. Vero, consectetur. Labore
+            voluptas quasi totam dolorum sapiente, perferendis voluptatibus
+            laborum? Non provident dignissimos dolores laudantium, vitae maxime
+            ipsum veritatis, recusandae ipsam velit esse.
+          </p>
+          <button id="more-btn">More Info</button>
+          <div id="social-media">
+            <a href="#" target="_blank">
+              <img src="/assets/images/facebook.jpeg" alt="facebook-icon" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="/assets/images/linkedin.png" alt="linkedin-icon" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="/assets/images/youtube.png" alt="youtube-icon" />
+            </a>
+            <a href="#" target="_blank">
+              <img src="/assets/images/github.png" alt="github-icon" />
+            </a>
+          </div>
+        </div>
+        <img
+          id="hero-image"
+          src="/assets/images/prof-img.jpeg"
+          alt="prof-image"
+        />
+      </section>
+    </main>
+  </body>
+</html>
