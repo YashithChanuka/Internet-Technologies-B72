@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise - 12</title>
+    <style>
+      body {
+        background-color: azure;
+      }
+      #title {
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 12px;
+      }
+      .product-card {
+        background-color: wheat;
+        padding: 16px;
+        border-radius: 12px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+      }
+      .btn-buy-now {
+        padding: 8px 16px;
+        background-color: blue;
+        color: white;
+        border-radius: 12px;
+        width: 100%;
+        margin-top: 8px;
+      }
+      .btn-add-to-cart {
+        padding: 8px 16px;
+        background-color: black;
+        color: white;
+        border-radius: 12px;
+        width: 100%;
+        margin-top: 8px;
+      }
+      .product-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .product-image {
+        width: 100%;
+        border-radius: 12px;
+      }
+      .product-description {
+        height: 100px;
+        overflow-y: scroll;
+      }
+
+      @media screen and (max-width: 575px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        .container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        .container {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Products Gallery</h1>
+    <div class="container">
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assets/images/laptop-image.jpeg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
+        </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assets/images/laptop-image.jpeg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
+        </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assets/images/laptop-image.jpeg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
+        </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assets/images/laptop-image.jpeg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
+        </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assets/images/laptop-image.jpeg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
+        </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assets/images/laptop-image.jpeg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
+        </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assets/images/laptop-image.jpeg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
+        </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assets/images/laptop-image.jpeg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
+        </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+    </div>
+  </body>
+</html>
