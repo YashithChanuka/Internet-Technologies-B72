@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson - jQuery Basics</title>
+  </head>
+  <body>
+    <h1 id="heading">jQuery Basics</h1>
+    <p class="paragragh">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio,
+      officiis quis incidunt est libero alias iusto animi sint fugit eaque
+      molestiae ea impedit illum adipisci cum corporis possimus culpa.
+    </p>
+    <p class="para">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id voluptatum
+      facere debitis repudiandae ratione provident laudantium recusandae qui
+      esse cumque possimus perspiciatis quisquam aspernatur, consectetur soluta
+      ipsa, nemo, quidem fuga.
+    </p>
+    <button>Click Here</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#heading").css("color", "red");
+        $(".paragragh").css("background-color", "yellow");
+        $("button").css("background-color", "green").css("color", "white");
+
+        $("button").on("click", function () {
+          //   alert("Handler for `click` called.");
+          //   $("p").hide();
+          //   $("p").toggle();
+          //   $("p").fadeOut();
+          $("p").fadeToggle();
+        });
+
+        function handlerIn() {
+          $(this).css("background-color", "red");
+        }
+
+        function handlerOut() {
+          $(this).css("background-color", "blue");
+        }
+
+        $(".para").on("mouseenter", handlerIn).on("mouseleave", handlerOut);
+      });
+    </script>
+  </body>
+</html>

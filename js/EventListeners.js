@@ -1,6 +1,8 @@
 console.log("EventListeners is loading...");
 
-const box = document.querySelector('.box');
+// const box = document.querySelector('.box');
+
+// ======== Mouse events =========
 
 // ========== single click event ==========
 // box.addEventListener('click', function () { 
@@ -28,11 +30,39 @@ const box = document.querySelector('.box');
 // })
 
 // ========= mouse-over event ==========
-box.addEventListener('mouseover', function () { 
-    console.log("Mouse Over.");
-})
+// box.addEventListener('mouseover', function () { 
+//     console.log("Mouse Over.");
+// })
 
 // ========= mouse-out event ==========
-box.addEventListener('mouseout', function () { 
-    console.log("Mouse Out.");
+// box.addEventListener('mouseout', function () { 
+//     console.log("Mouse Out.");
+// })
+
+// ======= Keyboard events =========
+
+// ========= key-down event ==========
+let input = document.getElementById("input");
+
+// input.addEventListener('keydown', function (event) {
+//     // console.log(event.key);
+//     if (event.key === 'Enter') {
+//         alert("You pressed Enter key.");
+//     }
+// });
+
+// ========= key-up event ==========
+// input.addEventListener('keyup', function (event) {
+//     console.log(event.key);
+// });
+
+// example
+input.addEventListener('keydown', function (event) { 
+    // console.log(event.keyCode);
+    let keyCode = event.keyCode;
+
+    if ((keyCode >= 48 && keyCode <= 57) || (keyCode >= 96 && keyCode <= 105)) {
+        return;
+    }
+    event.preventDefault();
 })
